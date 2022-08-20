@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Reference - Calculation Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../assets/_mkdocstrings.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Calculation Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Calculation Docs</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../tutorials/" class="nav-link">Tutorials</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../how-to-guides/" class="nav-link">How-To Guides</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Reference</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../explanation/" class="nav-link">Explanation</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href="../how-to-guides/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../explanation/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#calculator.calculations" class="nav-link">calculator.calculations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#calculator.calculations.add" class="nav-link">add()</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#calculator.calculations.divide" class="nav-link">divide()</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#calculator.calculations.multiply" class="nav-link">multiply()</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#calculator.calculations.subtract" class="nav-link">subtract()</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>This part of the project documentation focuses on
+an <strong>information-oriented</strong> approach. Use it as a
+reference for the technical implementation of the
+<code>calculator</code> project code.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+<a id="calculator.calculations"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Provide several sample math calculations.</p>
+<p>This module allows the user to make mathematical calculations.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; from calculator import calculations
+&gt;&gt;&gt; calculations.add(2, 4)
+6.0
+&gt;&gt;&gt; calculations.multiply(2.0, 4.0)
+8.0
+&gt;&gt;&gt; from calculator.calculations import divide
+&gt;&gt;&gt; divide(4.0, 2)
+2.0</code></pre>
+      <p>The module contains the following functions:</p>
+<ul>
+<li><code>add(a, b)</code> - Returns the sum of two numbers.</li>
+<li><code>subtract(a, b)</code> - Returns the difference of two numbers.</li>
+<li><code>multiply(a, b)</code> - Returns the product of two numbers.</li>
+<li><code>divide(a, b)</code> - Returns the quotient of two numbers.</li>
+</ul>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="calculator.calculations.add" class="doc doc-heading">
+<code class="highlight language-python">add(a, b)</code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Compute and return the sum of two numbers.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; add(4.0, 2.0)
+6.0
+&gt;&gt;&gt; add(4, 2)
+6.0</code></pre>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>a</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the first addend in the addition.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>b</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the second addend in the addition.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A number representing the arithmetic sum of <code>a</code> and <code>b</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>calculator\calculations.py</code></summary>
+        <pre class="highlight"><code class="language-python">def add(a: Union[float, int], b: Union[float, int]) -&gt; float:
+    """Compute and return the sum of two numbers.
+
+    Examples:
+        &gt;&gt;&gt; add(4.0, 2.0)
+        6.0
+        &gt;&gt;&gt; add(4, 2)
+        6.0
+
+    Args:
+        a: A number representing the first addend in the addition.
+        b: A number representing the second addend in the addition.
+
+    Returns:
+        A number representing the arithmetic sum of `a` and `b`.
+    """
+    return float(a + b)</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="calculator.calculations.divide" class="doc doc-heading">
+<code class="highlight language-python">divide(a, b)</code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Compute and return the quotient of two numbers.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; divide(4.0, 2.0)
+2.0
+&gt;&gt;&gt; divide(4, 2)
+2.0
+&gt;&gt;&gt; divide(4, 0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero</code></pre>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>a</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the dividend in the division.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>b</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the divisor in the division.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A number representing the quotient of <code>a</code> and <code>b</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ZeroDivisionError</code>
+          </td>
+          <td><p>An error occurs when the divisor is <code>0</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>calculator\calculations.py</code></summary>
+        <pre class="highlight"><code class="language-python">def divide(a: Union[float, int], b: Union[float, int]) -&gt; float:
+    """Compute and return the quotient of two numbers.
+
+    Examples:
+        &gt;&gt;&gt; divide(4.0, 2.0)
+        2.0
+        &gt;&gt;&gt; divide(4, 2)
+        2.0
+        &gt;&gt;&gt; divide(4, 0)
+        Traceback (most recent call last):
+        ...
+        ZeroDivisionError: division by zero
+
+    Args:
+        a: A number representing the dividend in the division.
+        b: A number representing the divisor in the division.
+
+    Returns:
+        A number representing the quotient of `a` and `b`.
+
+    Raises:
+        ZeroDivisionError: An error occurs when the divisor is `0`.
+    """
+    if b == 0:
+        raise ZeroDivisionError("division by zero")
+    return float(a / b)</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="calculator.calculations.multiply" class="doc doc-heading">
+<code class="highlight language-python">multiply(a, b)</code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Compute and return the product of two numbers.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; multiply(4.0, 2.0)
+8.0
+&gt;&gt;&gt; multiply(4, 2)
+8.0</code></pre>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>a</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the multiplicand in the multiplication.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>b</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the multiplier in the multiplication.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A number representing the product of <code>a</code> and <code>b</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>calculator\calculations.py</code></summary>
+        <pre class="highlight"><code class="language-python">def multiply(a: Union[float, int], b: Union[float, int]) -&gt; float:
+    """Compute and return the product of two numbers.
+
+    Examples:
+        &gt;&gt;&gt; multiply(4.0, 2.0)
+        8.0
+        &gt;&gt;&gt; multiply(4, 2)
+        8.0
+
+    Args:
+        a: A number representing the multiplicand in the multiplication.
+        b: A number representing the multiplier in the multiplication.
+
+    Returns:
+        A number representing the product of `a` and `b`.
+    """
+    return float(a * b)</code></pre>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="calculator.calculations.subtract" class="doc doc-heading">
+<code class="highlight language-python">subtract(a, b)</code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the difference of two numbers.</p>
+
+<p><strong>Examples:</strong></p>
+    <pre class="highlight"><code class="language-pycon">&gt;&gt;&gt; subtract(4.0, 2.0)
+2.0
+&gt;&gt;&gt; subtract(4, 2)
+2.0</code></pre>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>a</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the minuend in the subtraction.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>b</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[float, int]</code>
+          </td>
+          <td><p>A number representing the subtrahend in the subtraction.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>A number representing the difference between <code>a</code> and <code>b</code>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>calculator\calculations.py</code></summary>
+        <pre class="highlight"><code class="language-python">def subtract(a: Union[float, int], b: Union[float, int]) -&gt; float:
+    """Calculate the difference of two numbers.
+
+    Examples:
+        &gt;&gt;&gt; subtract(4.0, 2.0)
+        2.0
+        &gt;&gt;&gt; subtract(4, 2)
+        2.0
+
+    Args:
+        a: A number representing the minuend in the subtraction.
+        b: A number representing the subtrahend in the subtraction.
+
+    Returns:
+        A number representing the difference between `a` and `b`.
+    """
+    return float(a - b)</code></pre>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
