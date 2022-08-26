@@ -18,6 +18,7 @@ and consists of four separate parts:
 2. [How-To Guides](how-to-guides.md)
 3. [Reference](reference.md)
 4. [Explanation](explanation.md)
+5. [Details in Code](calculator/calc_deets.md)
 
 Quickly find what you're looking for depending on
 your use case by looking at the different pages.
