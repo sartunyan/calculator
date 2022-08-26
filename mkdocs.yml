@@ -2,6 +2,16 @@ site_name: Calculation Docs
 
 plugins:
   - mkdocstrings
+  # - mkdocs-with-confluence:
+  #   host_url: https://servicetitan.atlassian.net/rest/api/content
+  #   space: CORPIT
+  #   parent_page_name: 2381152522
+  #   username: <YOUR_USERNAME_TO_CONFLUENCE>
+  #   password: <YOUR_PASSWORD_TO_CONFLUENCE>
+  #   enabled_if_env: MKDOCS_TO_CONFLUENCE
+  #   #verbose: true
+  #   #debug: true
+  #   dryrun: true
 
 nav:
   - Calculation Docs: index.md
