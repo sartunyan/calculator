@@ -11,7 +11,7 @@ mkdocstrings, and the Material for MkDocs theme.
 
 The documentation follows the best practice for
 project documentation as described by Daniele Procida
-in the [Diátaxis documentation framework](https://diataxis.fr/)
+in the [Diataxis documentation framework](https://diataxis.fr/)
 and consists of four separate parts:
 
 1-4
