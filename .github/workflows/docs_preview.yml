@@ -5,7 +5,7 @@ on:
     branches:
       - "main"
     paths:
-      - "docs/**"
+      - "md2conf/**"
 
 jobs:
   create-preview:
@@ -17,7 +17,7 @@ jobs:
       - name: Conversion step
         uses: TTengs/MarkdownToConfluence@v3
         with:
-          fileslocation: 'docs'
+          fileslocation: 'md2conf'
           confluence_url: 'https://servicetitan.atlassian.net'
           confluence_space_key: '~2398126129'
           auth_username: ${{ secrets.CONFLUENCE_USERNAME }}
