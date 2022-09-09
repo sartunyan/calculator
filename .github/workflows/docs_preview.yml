@@ -1,0 +1,25 @@
+name: documentation_preview
+
+on:
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - "docs/**"
+
+jobs:
+  create-preview:
+    runs-on: ubuntu-latest
+    name: Uploading Preview
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Conversion step
+        uses: TTengs/MarkdownToConfluence@v3
+        with:
+          fileslocation: 'docs'
+          confluence_url: 'https://servicetitan.atlassian.net'
+          confluence_space_key: '~2398126129'
+          auth_username: ${{ secrets.CONFLUENCE_USERNAME }}
+          auth_api_token: ${{ secrets.CONFLUENCE_API_TOKEN }}
+          is_preview: true
