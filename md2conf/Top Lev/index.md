@@ -21,7 +21,7 @@ your use case by looking at the different pages.
 
 ## Project Overview
 
-Dummy. Expanding test changes.
+Dummy. Re-Expanding test changes.
 
 ## Acknowledgements
 
