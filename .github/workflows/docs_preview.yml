@@ -19,7 +19,7 @@ jobs:
         with:
           fileslocation: 'md2conf'
           confluence_url: 'https://servicetitan.atlassian.net'
-          confluence_space_key: '2398126129'
+          confluence_space_key: 'BI'
           auth_username: ${{ secrets.CONFLUENCE_USERNAME }}
           auth_api_token: ${{ secrets.CONFLUENCE_API_TOKEN }}
           is_preview: true
